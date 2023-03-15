@@ -1,17 +1,12 @@
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 import { NativeWindStyleSheet } from 'nativewind';
-import TestScreen from "../screens/TestScreen";
-import LoginProf from "../screens/LoginProf"
-import LoginStudent from "../screens/LoginStudent";
-import ProfSign from "../screens/ProfSign";
-import StudentSign from "../screens/StudentSign";
 import Home from "../screens/Home";
 import LoginScreen from "../screens/Login";
 import SignupScreen from "../screens/Signup";
-import SubjectChoiceScreen from "../screens/SubjectChoice";
-import FirstScreen from "../screens/FirstScreen";
-import SecondScreen from "../screens/SecondScreen";
+import deptChoiceScreen from "../screens/deptChoice";
+import dashboardScreen from "../screens/dashboard";
+import passedExamScreen from "../screens/passedExam";
 
 
 
@@ -19,70 +14,40 @@ const screens = {
     Home : {
         screen: Home,
         navigationOptions: {
-            header: null,
-        },
-    },
-    FirstScreen : {
-        screen: FirstScreen,
-        navigationOptions: {
-            header: null,
-        },
-    },
-    SecondScreen : {
-        screen: SecondScreen,
-        navigationOptions: {
-            header: null,
+            headerShown: false
         },
     },
     LoginScreen : {
         screen: LoginScreen,
         navigationOptions: {
-            header: null,
+            headerShown: false
         },
     },
     SignupScreen : {
         screen: SignupScreen,
         navigationOptions: {
-            header: null,
+            headerShown: false,
         },
     },
-    SubjectChoiceScreen : {
-        screen: SubjectChoiceScreen,
-        
-    },
-
-    TestScreen : {
-        screen: TestScreen,
+    passedExamScreen : {
+        screen: passedExamScreen,
         navigationOptions: {
-            header: null,
+            headerShown: false,
         },
     },
-    LoginProf : {
-        screen: LoginProf,
+    deptChoiceScreen : {
+        screen: deptChoiceScreen,
         navigationOptions: {
-            header: null,
-        },
-    },
-    LoginStudent : {
-        screen: LoginStudent,
-        navigationOptions: {
-            header: null,
-        },
-    },
-    ProfSign : {
-        screen: ProfSign,
-        navigationOptions: {
-            header: null,
-        },
-    },
-    StudentSign : {
-        screen: StudentSign,
-        navigationOptions: {
-            header: null,
+            headerShown: false,
         },
     },
     
-    
+    dashboardScreen : {
+        screen: dashboardScreen,
+        navigationOptions: {
+            headerShown: false
+        },
+    },
     
 }
 
